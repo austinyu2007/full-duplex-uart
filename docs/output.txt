@@ -1,0 +1,7 @@
+VCD info: dumpfile dump.vcd opened for output.
+DATABUS1 OUTPUT: 01010100		EXPECTED: 01010100
+DATABUS0 OUTPUT: 10000110		EXPECTED: 10000110
+
+SUCCESS: no error detected
+testbench.sv:93: $finish called at 1850000 (1ps)
+Finding VCD file...
