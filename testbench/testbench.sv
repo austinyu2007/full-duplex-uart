@@ -68,8 +68,8 @@ module testbench ();
     #50; //Wait for reset to clear everything
     reset <= 1'b0;
     
-    databus_in0 = $urandom_range(0, 63); //The byte that uart0 will send to uart1
-    databus_in1 = $urandom_range(0, 63); //The byte that uart1 will send to uart0
+    databus_in0 = $urandom_range(0, 255); //The byte that uart0 will send to uart1
+    databus_in1 = $urandom_range(0, 255); //The byte that uart1 will send to uart0
     tx_needed0 = 1'b1; //the outside device (aka the testbench) is telling uart0 that it has a packet to transmit
     tx_needed1 = 1'b1; //the outside device (aka the testbench) is telling uart1 that it has a packet to transmit
     
